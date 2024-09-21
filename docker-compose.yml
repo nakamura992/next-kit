@@ -7,13 +7,10 @@ services:
       dockerfile: ./Dockerfile
     container_name: 
     volumes:
-      - ./###:/next
-      - node-modules:/###/node_modules
+      - /next/node_modules
+      - ./next:/next
     ports:
       - 3000:3000
     command: npm run dev
     environment:
       - WATCHPACK_POLLING=true
-
-volumes:
-  node-modules:
