@@ -33,4 +33,4 @@ vdown:
 	docker-compose down -v
 
 cpnode:
-	docker-compose cp prac-nextjs:/next/node_modules ./next
+	docker-compose cp nextjs:/next/node_modules ./next
